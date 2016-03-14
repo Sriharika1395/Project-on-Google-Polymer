@@ -1,0 +1,242 @@
+<!--
+    @license
+    Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+    Code distributed by Google as part of the polymer project is also
+    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<!doctype html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+  <title>paper-input</title>
+
+  <script src="../webcomponentsjs/webcomponents.js"></script>
+
+  <link href="../font-roboto/roboto.html" rel="import">
+  <link href="paper-input/test/paper-autogrow-textarea.html" rel="import">
+  <link href="paper-input/test/paper-input-decorator.html" rel="import">
+  <link href="paper-input/test/paper-input.html" rel="import">
+  <link href="paper-input/test/paper-char-counter.html" rel="import">
+  <link rel="import" href="../core-icons/core-icons.html">
+  <link rel="import" href="../paper-ripple/paper-ripple.html">
+  <link rel="import" href="../font-roboto/roboto.html">
+  <link rel="import" href="../core-icon/core-icon.html">
+  
+  
+  <link href="buttons.html" rel="import">
+  
+  <style shim-shadowdom>
+
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 14px;
+      margin: 0;
+      padding: 24px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+    }
+    .center {
+      text-align: center;
+    }
+    
+    .button.raised {
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+    
+    .button.raised:active {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      transition-delay: 0s;
+    }
+    section {
+      padding: 20px 0;
+    }
+
+    section > div {
+      padding: 14px;
+      font-size: 16px;
+    }
+
+    paper-input {
+      width: 80%;
+    }
+
+    paper-input-decorator {
+      max-width: 80%;
+    }
+
+    @media only screen and (min-width : 320px) {
+      paper-input {
+        width: 100%;
+      }
+
+      paper-input-decorator {
+        max-width: 100%;
+      }
+    }
+
+    paper-input.narrow {
+      width: 150px;
+    }
+
+    .custom /deep/ ::-webkit-input-placeholder {
+      color: #f4b400;
+    }
+
+    .custom /deep/ ::-moz-placeholder {
+      color: #f4b400;
+    }
+
+    .custom /deep/ :-ms-input-placeholder {
+      color: #f4b400;
+    }
+
+    .custom /deep/ .label-text,
+    .custom /deep/ .error {
+      color: #f4b400;
+    }
+
+    .custom /deep/ .unfocused-underline {
+      background-color: #f4b400;
+    }
+
+    .custom[focused] /deep/ .floated-label .label-text {
+      color: #0f9d58;
+    }
+
+    .custom /deep/ .focused-underline {
+      background-color: #0f9d58;
+    }
+
+    .custom.invalid /deep/ .floated-label .label-text,
+    .custom /deep/ .error {
+      color: #f06292;
+    }
+
+    .custom.invalid /deep/ .focused-underline {
+      background-color: #f06292;
+    }
+
+    .custom {
+      color: #1a237e;
+    }
+
+  </style>
+
+</head>
+<body unresolved>
+
+  <p>
+
+    <div style="color:#dc143c"><strong>NAME:</strong></div>
+
+    
+
+    <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+
+
+  </p>
+
+  <p>
+
+     <div style="color:#dc143c"><strong>INTERESTED CLUBS:</strong></div>
+
+    
+
+    <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+    
+    <br>
+     <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+    <br>
+     <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+     <br>
+     <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+     <br>
+     <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+    
+
+
+
+  </p>
+
+  <p>
+
+     <div style="color:#dc143c"><strong>BRANCH AND YEAR:</strong></div>
+
+    <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+
+  </p>
+   
+
+  <p>
+
+     <div style="color:#dc143c"><strong>E-mail ID:</strong></div>
+
+    
+     <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+  </p>
+  <p>
+
+     <div style="color:#dc143c"><strong>PHONE NUMBER:</strong></div>
+
+    
+     <paper-input-decorator label="required" floatingLabel error="input is required!" autoValidate>
+      <input is="core-input" required>
+    </paper-input-decorator>
+  </p>
+  <p>
+  
+    <div class="button raised">
+      <div class="center" fit>SUBMIT</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+    
+    <div class="button raised grey">
+      <div class="center" fit>Save as draft</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+    
+    <!--<div class="button raised blue">
+      <div class="center" fit>COMPOSE</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+    
+    <div class="button raised green">
+      <div class="center" fit>OK</div>
+      <paper-ripple fit></paper-ripple>
+    </div>-->
+    
+  </p>
+
+  <script>
+
+    document.body.addEventListener('change', function(e) {
+      console.log('change', e.target);
+    });
+
+  </script>
+
+</body>
+</html>

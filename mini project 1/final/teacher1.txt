@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+#header{
+	background-color:#000000;
+	color:white;
+	text-align:center;
+	padding:10px;
+	}
+#section1
+	{line-height:60px;
+	background-color:#00BFFF;
+	color:white;
+	text-align:left;
+	padding:40px;
+	float:right;
+	height:420px;
+   	 width:190px;	
+}
+
+#section2{line-height:30px;
+	background-color:#FF69B4;
+	color:white;
+	text-align:left;
+	padding:40px;
+	float:left;
+	height:420px;
+   	 width:93px;	
+	}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	
+}
+th, td {
+    padding: 25px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:right;
+   padding:15px;	 	 
+}
+</style>
+<div id="header">
+<h1>Welcome!</h1>
+<h2>This is your timetable</h2>
+<p id="demo" align="right">today's date:</p1>
+<p align="left">Hello! Mrs.Trupthi</p1>
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+</div>
+</script>
+<div id="section1">
+<ul style="list-style-type:disc">
+ <li>Change your timetable</li>
+ <li><a href="http://www.cbit.ac.in/">CBIT website</a></li>
+ </ul>  
+</div>
+<div id="section2">
+<ul style="list-style-type:disc">
+<li>Upload data</li>
+<li>Your notes</li>
+<li>Student info</li>
+</ul>
+</div>
+
+<table  border="1" style="width:65%">
+  <tr>
+ <th >          </th> <th style="color:teal">9:35-11:20</th>
+ <th style="color:teal">11:20-1:00</th>
+ <th style="color:teal">1:00-1:35</th>
+ <th style="color:teal">1:35-2:20</th>
+ <th style="color:teal">2:20-4:05</th>  </tr>
+  <tr>
+ <td style="color:blue"><b>MONDAY</b></td>
+ <td>IT 1/4</td>
+ <td>IT 3/4</td>
+ <td>LUNCH</td>
+ <td>----</td>
+ <td>----</td>
+
+</tr>
+<tr>
+ <td style="color:red"><b>TUESDAY</b></td>
+ <td>IT 1/4</td>
+ <td>CIVIL 1/4</td>
+ <td>LUNCH</td>
+ <td>ECE 2/4</td>
+ <td>----</td>
+</tr>
+<tr>
+ <td style="color:darkolivegreen"><b>WEDNESDAY</b></td>
+ <td>IT 2/4</td>
+ <td>EEE 1/4</td>
+ <td>LUNCH</td>
+ <td>IT 2/4 LAB1</td>
+ <td>IT 2/4 LAB1</td>
+</tr>
+<tr>
+ <td style="color:darkstateblue"><b>THURSDAY</b></td>
+ <td>IT2/4 LAB2</td>
+ <td>IT2/4 LAB2</td>
+ <td>LUNCH</td>
+ <td>----</td>
+ <td>----</td>
+</tr>
+<tr>
+ <td style="color:mediumorchid"><b>FRIDAY</b></td>
+ <td>----</td>
+ <td>----</td>
+ <td>LUNCH</td>
+ <td>IT2/4 LAB3</td>
+ <td>IT2/4 LAB3</td>
+</tr>
+<tr>
+ <td style="color:navy"><b>SATURDAY</b></td>
+ <td>CIVIL 1/4</td>
+ <td>----</td>
+ <td>LUNCH</td>
+ <td>ECE 1/4</td>
+ <td>EEE 1/4</td>
+</tr></table>
+</div>
+<div id="footer">
+<p1><a href="homepage.html">LOGOUT</a></p1>
+</div>
+</body>
+</html>

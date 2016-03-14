@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div style="background-color:DarkOrchid; color:white; margin:20px; padding:20px;">
+<h2>INCORRECT PASSWORD</h2>
+ <p>PLEASE CONTACT ADMIN FOR A NEW PASSWORD</p>
+</div> 
+</body>
+</html>

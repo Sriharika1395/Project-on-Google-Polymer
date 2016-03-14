@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.concept1
+{
+font face=sans-serif;
+text-align:center;
+background-color:#C71585;
+color:white;
+padding:20px;
+margin:3px;
+}
+.concept2{
+background-color:grey;
+width:350px;
+float:right;
+padding:10px;	 	 
+font face="verdana";
+align:"left"; 
+size="3";
+margin:3px;
+}
+.concept3{
+background-color:#4B0082;
+width:350px;
+float:left;
+padding:300px;	 	 
+font face="verdana";
+align:"left"; 
+size="3";
+margin:3px;
+}
+
+</style>
+
+<body>
+<div class="concept1">
+<img src="logo.jpg" alt="logo" style="float:left; ;width:120px;height:120px">
+<h1><b><font face="verdana">Chaitanya Bharathi Institute of Technology</font></b></h1>
+<p1><font face="fantasy" size="5">
+<marquee behavior="scroll" direction="left">
+Welcome to the offical teacher's portal</marquee></font></p1>
+</div>
+<div class="concept2">
+<h1><u>Hello Teachers!</u></h1>
+<p1>Welcome!.<br> This site is made so that you can have ease to your timetable anytime.<br> Ask for your username and password. CLick the login button given there to have access to your timetable anytime you like. <br></p1>
+</div>
+<div class="concept3">
+<p1>Log in if you are a registered member.</p1>
+
+<script type="text/javascript">
+var passwordh= "harika";
+var passworda="anagha";
+var passwordd="deepa";
+
+
+var x = prompt("Enter in the password "," ");
+if (x.toLowerCase() == passwordh)
+ {
+  alert("Come right in \n \n You've entered in the right password");
+  
+  window.location = "teacher1.html";
+}
+else{
+ if(x.toLowerCase() == passworda)
+{
+  alert("Come right in \n \n You've entered in the right password");
+  window.location = "teacher2.html";
+}
+else{
+  
+if(x.toLowerCase()==passwordd)
+{
+  alert("Come right in \n \n You've entered in the right password");
+  window.location="teacher3.html";
+  }
+  else
+  {
+  window.location = "page3.html";
+}
+}
+}
+</script>
+
+<form>
+<p>CLICK LOGIN TO TYPE YOUR PASSWORD</p> 
+<input type="submit" value="log in"> 
+</form>
+</p>
+<p><a href="page3.html">Forgot Password?</a></p>
+</fieldset>
+</form>
+<form>
+
+</div>
+
+</body>
+</html>
